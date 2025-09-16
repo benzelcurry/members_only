@@ -1,24 +1,15 @@
-# README
+# Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A beginner Ruby on Rails project from [The Odin Project](https://www.theodinproject.com/)'s curriculum. This app is a simple “members-only” clubhouse where registered users can post stories. Users inside the clubhouse can see the author of each post, while to users who are outside, posts appear anonymous.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- User authentication using **Devise**
+- Users can **sign up, log in, and log out**
+- Users can **create posts**
+- Posts are associated with the author, but display anonymously to non-logged-in users
 
-* System dependencies
+## Models
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- **User**: stores username and authentication info
+- **Post**: stores title, body, and which user a post belongs to
